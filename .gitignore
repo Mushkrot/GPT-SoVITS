@@ -1,0 +1,101 @@
+# Virtual environments
+../gpt_sovits_env/
+gpt_sovits_env/
+venv/
+env/
+.env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Models and weights
+GPT_SoVITS/pretrained_models/*
+tools/uvr5/uvr5_weights/*
+tools/asr/models/*
+tools/denoise-model/*
+tools/AP_BWE_main/24kto48k/*
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+model.*/
+
+# Dataset and processed files
+dataset_raw/*
+!dataset_raw/README.md
+!dataset_raw/.gitkeep
+
+# Cache and dictionary files
+*.pickle
+*.rep
+text/engdict_cache.pickle
+text/namedict_cache.pickle
+text/cmudict.rep
+text/cmudict-fast.rep
+text/engdict-hot.rep
+text/g2pw/polyphonic.pickle
+text/g2pw/polyphonic.rep
+text/g2pw/polyphonic-fix.rep
+
+# Training outputs
+checkpoints/
+outputs/
+logs/
+*.log
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Keep specific files
+!GPT_SoVITS/pretrained_models/.gitignore
+!tools/uvr5/uvr5_weights/.gitignore
+!tools/asr/models/.gitignore
+!tools/denoise-model/.gitignore
+
+# Additional ignores
+*.so
+*.dll
+*.dylib
+*.o
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
